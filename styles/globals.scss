@@ -1,0 +1,60 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.plant-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 232px);
+  justify-content: center;
+  background-color: rgb(151, 168, 148);
+}
+
+.plant-category-item {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.plant-list-item__title {
+  padding-bottom: 40px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 980px;
+  margin: auto;
+
+  &__filters {
+    width: 200px;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
